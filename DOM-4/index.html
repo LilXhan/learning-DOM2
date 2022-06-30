@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row mt-5 text-center">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Manzana</h5>
+            <button data-fruta='Manzana' data-id="1" class="btn btn-outline-primary">Comprar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Pera</h5>
+            <button data-fruta='Pera' data-id="2" class="btn btn-outline-primary">Comprar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Naranja</h5>
+            <button data-fruta="Naranja" data-id="3" class="btn btn-outline-primary">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ul class="list-group mt-5" id="list"></ul>
+
+  <template id="templateList">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      <span id="fruit">A list item</span>
+      <span class="badge bg-primary rounded-pill">14</span>
+    </li>
+  </template>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

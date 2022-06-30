@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <title>Vite App</title>
+</head>
+
+<body>
+  <h1>Formulario</h1>
+  <form id="formulario">
+    <div class="form-row">
+      <div class="col-md-4 mb-0">
+        <label for="validationServer01"></label>
+        <input type="text" class="form-control" id="validationServer01" name="userName" placeholder="Nombre"
+          autocomplete="off" required>
+        <div class="invalid-feedback">
+          Ingrese un nombre de usuario correcto.
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="validationServer02"></label>
+        <input type="text" class="form-control" id="validationServer02" name="userEmail" autocomplete="off"
+          placeholder="Email" required>
+        <div class="invalid-feedback">
+          Ingrese un correo valido.
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Enviar</button>
+  </form>
+  <div id="check">
+  </div>
+
+  <template id="checkTemplate">
+    <div class="card mt-3 border-success" style="width: 18rem;background-color: #e0f0fd">
+      <div class="card-body text-center">
+        <p class="card-text text-success">Formulario enviado con exito</p>
+      </div>
+    </div>
+  </template>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

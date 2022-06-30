@@ -12,7 +12,7 @@ const myFunction = (array) => {
       const newArray =  [];
     }
   }
-  return newArray.concat(newArrayRe)
+  return newArray.concat(arrayRepe)
 }
 
 console.log(myFunction([2,1,3]))

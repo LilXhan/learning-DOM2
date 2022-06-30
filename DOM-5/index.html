@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="row mt-4">
+      <div class="col-sm-4 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Manzana</h5>
+            <p id="precio" class="card-text">$2</p>
+            <button data-fruta="Manzana" data-precio="2" class="btn btn-outline-primary">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Pera</h5>
+            <p id="precio" class="card-text">$3</p>
+            <button data-fruta="Pera" data-precio="3" class="btn btn-outline-primary">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-4 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Naranja</h5>
+            <p id="precio" class="card-text">$4</p>
+            <button data-fruta="Naranja" data-precio="4" class="btn btn-outline-primary">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <ul class="list-group" id="listaCarrito" data-lista="lista"></ul>
+
+  <template id="listItem" data-item="itemLista">
+    <div class="card w-50 mt-4 mx-auto">
+      <div class="card-body">
+        <h5 class="card-title">Pera</h5>
+        <span class="badge bg-primary rounded-pill">1</span>
+        <hr>
+        <p class="card-text">Total: $100</p>
+        <button class="btn btn-success">Agregar</button>
+        <button class="btn btn-danger">Quitar</button>
+      </div>
+    </div>
+  </template>
+
+  <ul class="list-group" id="total" data-total="total"></ul>
+
+  <template id="totalCompra" data-compra="totalCompra">
+    <div class="card w-50 mt-4 mx-auto">
+      <div class="card-body justify-content-between">
+        <h5 class="card-title">$0</h5>
+        <button class="btn btn-outline-primary">Finalizar Compra</button>
+      </div>
+    </div>
+  </template>
+
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
